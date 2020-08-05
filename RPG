@@ -1,0 +1,56 @@
+#--------------------------------
+# By: SamDAlott
+# Date: 7/2/2020
+# Description: Random Password Generator(RPG)
+#--------------------------------
+
+# Makes random.choice() and random.shuffle code work
+import random
+
+
+# List of letters
+letters = random.choice(["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"])
+
+
+# List of numbers
+mixed_numbers = random.choice(["161", "252", "331", "374", "853", "642", "727", "861", "924", "180", "131", "412", "183", "154", "115", "116", "147", "138", "219", "120", "021", "242", "223", "294", "625", "626", "217", "238", "239", "304", "351", "362", "330", "394", "385", "636", "317", "328", "392", "404", "471", "442", "413", "444", "425", "476", "427", "348", "469", "550", "513", "524", "753", "354", "553", "566", "057", "580", "592", "640", "148", "623", "683", "624", "645", "866", "667", "658", "639", "770", "071", "752", "782", "743", "758", "756", "747", "783", "779", "890", "817", "852", "835", "842", "885", "836", "875", "888", "893", "980", "914", "982", "593", "494", "295", "196", "197", "198", "199", "100"])
+
+
+# List of different letters
+mixed_letters = random.choice(["az", "by", "cx", "dw", "ev", "fl", "gt", "hs", "ir", "jq", "kp", "lo", "mn", "nm", "ol", "pk", "qj", "ri", "sh", "tg", "uf", "ve", "wd", "xc", "yb", "za", "hc", "ke", "fx", "we", "re", "ye", "et"])
+
+
+# List of capital letters
+capital = random.choice(["HS", "WG", "ME", "PI", "ZZ", "AD", "AB", "SS", "TS", "BN", "QW", "TH", "UI", "WB", "DC", "MC", "JD", "JK"])
+
+
+# list of different numbers
+more_numbers = random.choice(["110", "259", "338", "467", "516", "685", "704", "883", "292", "101", "105", "623", "423", "373", "517", "366", "827", "038", "009", "140"])
+
+
+# list of letters and numbers
+mixed = random.choice(["jDs", "73h", "k92", "d01", "52s", "0p8", "cM7", "29j", "Le6", "j82", "4f7", "gwb", "790","tvc", "472", "9k6", "63w", "psl", "e6g", "083", "ve5", "BYu"])
+
+
+# Makes all the lists above retrievable under the variable 'password'.
+password = ([letters, mixed_numbers, mixed_letters, capital, more_numbers, mixed])
+
+
+# After taking all the randomly generated data and putting it in one list this allows me to shuffle the data that i just retrieved, but makes it print as a list.
+random.shuffle(password)
+
+
+# Explanitory piece of code
+print("Password:")
+
+
+# Takes the list password and makes it so it prints as one word
+print ("".join(password))
+
+
+print("\n\n--------------------------------")
+print("By: SamDAlott")
+print("Date: 7/2/2020")
+print("Description: Random Password Generator(RPG)")
+print("--------------------------------")
+
