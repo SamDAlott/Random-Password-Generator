@@ -1,3 +1,3 @@
 # Random-Password-Generator
 
-I wrote this code for a competion. A youtuber I watch posted that he was hosting a coding jam.
+Takes a bunch of lists, randomly combines them and then randomly mixes up the order of the combined lists. 
